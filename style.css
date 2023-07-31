@@ -585,6 +585,9 @@ footer .footer-logo {
   padding-left: 215px;
 }
 
+.find-us-on {
+  margin-left: 50px;
+}
 footer h3 {
   font-family: var(--text-font-family);
   font-size: 14px;
@@ -664,6 +667,18 @@ footer h3 {
   position: absolute;
   right: 8px;
   top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.close-button .icon-close {
+  width: 18px;
+  height: 18px;
+  color: #000000;
+}
+.close-button .icon-close:hover,
+.close-button .icon-close:focus {
+  color: var(--accent-color);
 }
 .modal-heading {
   color: #000000;
@@ -694,9 +709,10 @@ footer h3 {
 .form-group .input:hover,
 .form-group .input:focus {
   border: 1px solid var(--accent-color);
+  transition: border var(--transition);
 }
 
-.form-group .input:focus-within > svg {
+.form-group .input-group svg:hover {
   color: var(--accent-color);
 }
 .form-group input {
@@ -725,17 +741,22 @@ footer h3 {
   cursor: pointer;
 }
 
-.agree-check .terms-info {
-  margin-left: 8px;
+.service-text .terms-info {
   color: #2196f3;
-  font-weight: bold;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
 }
 
 .agree-check {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 .agree-check .checkmark {
@@ -772,7 +793,7 @@ footer h3 {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.01em;
   color: var(--dark-gray);
 }
 .form-group .submit-button {
@@ -816,6 +837,17 @@ footer h3 {
   line-height: 30px;
   letter-spacing: 0.06em;
   text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+.icon-send {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 13px;
 }
 .footer-socials {
   display: flex;

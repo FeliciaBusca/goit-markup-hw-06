@@ -470,7 +470,7 @@
       </div>
 
       <div class="footer-socials">
-        <div>
+        <div class="find-us-on">
           <h3>FIND US ON</h3>
           <div class="social-icon-list-footer">
             <a
@@ -521,7 +521,14 @@
               />
             </label>
             <div class="subscribe">
-              <button class="submit-button">Subscribe</button>
+              <button class="submit-button">
+                <span>Subscribe</span>
+                <span>
+                  <svg class="icon-send">
+                    <use href="./images/SVG/symbol-defs.svg#icon-send"></use>
+                  </svg>
+                </span>
+              </button>
             </div>
           </form>
         </div>
@@ -530,34 +537,40 @@
 
     <div class="modal is-hidden" data-modal>
       <div class="modal-content">
-        <button class="close-button" data-modal-close>&times;</button>
+        <button class="close-button" data-modal-close>
+          <svg class="icon-close">
+            <use href="./images/SVG/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
         <h2 class="modal-heading">
           Leave your information and we'll call you back
         </h2>
         <form class="form">
           <label class="form-group">
             <span>Name</span>
-            <input type="text" name="name" id="name" class="input" />
-            <svg
-              width="18"
-              height="18"
-              viewBox="0 0 18 18"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-              class="input-icon"
-            >
-              <g clip-path="url(#clip0_1_2667)">
-                <path
-                  d="M9 9C10.6575 9 12 7.6575 12 6C12 4.3425 10.6575 3 9 3C7.3425 3 6 4.3425 6 6C6 7.6575 7.3425 9 9 9ZM9 10.5C6.9975 10.5 3 11.505 3 13.5V14.25C3 14.6625 3.3375 15 3.75 15H14.25C14.6625 15 15 14.6625 15 14.25V13.5C15 11.505 11.0025 10.5 9 10.5Z"
-                  fill="#212121"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_1_2667">
-                  <rect width="18" height="18" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
+            <div class="input-group">
+              <input type="text" name="name" id="name" class="input" />
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 18 18"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                class="input-icon"
+              >
+                <g clip-path="url(#clip0_1_2667)">
+                  <path
+                    d="M9 9C10.6575 9 12 7.6575 12 6C12 4.3425 10.6575 3 9 3C7.3425 3 6 4.3425 6 6C6 7.6575 7.3425 9 9 9ZM9 10.5C6.9975 10.5 3 11.505 3 13.5V14.25C3 14.6625 3.3375 15 3.75 15H14.25C14.6625 15 15 14.6625 15 14.25V13.5C15 11.505 11.0025 10.5 9 10.5Z"
+                    fill="#212121"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_2667">
+                    <rect width="18" height="18" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
           </label>
 
           <label class="form-group">
@@ -632,7 +645,7 @@
             </svg>
             <span class="service-text">
               I agree with the newsletter and accept the
-              <a href=""
+              <a class="terms-info" href=""
                 ><span class="terms-info">Terms and Conditions</span></a
               >
             </span>
