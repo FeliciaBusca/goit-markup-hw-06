@@ -709,7 +709,12 @@ footer h3 {
 .form-group .input:hover,
 .form-group .input:focus {
   border: 1px solid var(--accent-color);
-  transition: border var(--transition);
+  transition: border var(--transition) color var(--transition);
+}
+.form-group .input:hover + svg,
+.form-group .input:focus + svg {
+  color: var(--accent-color);
+  transition: color var(--transition);
 }
 
 .form-group .input-group svg:hover {
