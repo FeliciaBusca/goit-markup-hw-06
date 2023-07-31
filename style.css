@@ -136,6 +136,7 @@ a {
 }
 .global-header .main-navigation a {
   position: relative;
+  color: var(--heading-color);
 }
 .global-header .main-navigation a:active {
   color: var(--accent-color);
@@ -162,6 +163,10 @@ a {
 
 .e-mail:hover,
 .e-mail:focus,
+.e-mail:hover + svg,
+.e-mail:focus + svg,
+.phone-number:hover + svg,
+.phone-number:focus + svg,
 .phone-number:hover,
 .phone-number:focus,
 .contact-link-footer:hover,
@@ -468,8 +473,17 @@ footer address .contact-link-footer {
   justify-content: center;
   align-items: center;
 }
+
 .regular-customers-list .regular-customer-icon svg:hover,
 .regular-customers-list .regular-customer-icon svg:focus {
+  color: var(--accent-color);
+  transition: color var(--transition);
+}
+.regular-customers-list .regular-customer-icon:hover,
+.regular-customers-list .regular-customer-icon:focus,
+.regular-customers-list .regular-customer-icon:hover + svg,
+.regular-customers-list .regular-customer-icon:focus + svg {
+  border-color: var(--accent-color);
   color: var(--accent-color);
   transition: color var(--transition);
 }
